@@ -130,9 +130,11 @@ async function getRefreshToken() {
     instance = await initInstance()
   } catch (e) {}
 
-  let refreshToken = process.env.refreshToken || []
+  //let refreshToken = process.env.refreshToken || []
+  let refreshToken = process.env.Aliyun_RefreshToken || []
   try {
-    if (instance) refreshToken = await getEnv(instance, 'refreshToken')
+    //if (instance) refreshToken = await getEnv(instance, 'refreshToken')
+    if (instance) refreshToken = await getEnv(instance, 'Aliyun_RefreshToken')
   } catch (e) {}
 
   let refreshTokenArray = []
