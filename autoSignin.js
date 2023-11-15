@@ -1,5 +1,5 @@
 /*
-cron "0 15 0 ? * *" autoSignin.js, tag=阿里云盘签到
+cron "0 20 0 ? * *" autoSignin.js, tag=阿里云盘签到
 */
 
 const axios = require('axios')
