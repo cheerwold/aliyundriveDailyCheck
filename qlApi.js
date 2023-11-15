@@ -9,8 +9,8 @@
 const axios = require('axios')
 const QL_PATH = process.env.QL_PATH?process.env.QL_PATH:''
 const QL_URL = `http://127.0.0.1:5700${QL_PATH}`
-const CLIENT_ID = process.env.CLIENT_ID
-const CLIENT_SECRET = process.env.CLIENT_SECRET
+const CLIENT_ID = process.env.QL_UPDATE_ENV_CLIENT_ID
+const CLIENT_SECRET = process.env.QL_UPDATE_ENV_CLIENT_SECRET
 
 /**
  *获取青龙token
