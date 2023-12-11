@@ -3,8 +3,8 @@ cron "0 20 0 ? * *" autoSignin.js, tag=阿里云盘签到
 */
 
 const axios = require('axios')
-const { initInstance, getEnv, updateCkEnv } = require('./qlApi.js')
-const notify = require('./sendNotify')
+const { initInstance, getEnv, updateCkEnv } = require('/ql/data/scripts/qlApi.js')
+const notify = require('/ql/data/scripts/sendNotify')
 
 const updateAccesssTokenURL = 'https://auth.aliyundrive.com/v2/account/token'
 const signinURL =
