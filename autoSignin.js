@@ -205,5 +205,8 @@ async function getRefreshToken() {
     }
     index++
   }
-  await notify.sendNotify(`阿里云盘签到`, message.join('\n'))
+  
+  const title = '阿里云盘签到';
+  const body = message.join('\n');
+  notify.sendNotify(title, body, undefined, undefined, { QYWX_KEY: process.env.QYWX_KEY_sign });
 })()
